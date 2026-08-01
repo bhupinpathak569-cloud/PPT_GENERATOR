@@ -74,7 +74,7 @@ def generate_image(img_prompt,slide_no = 1):
 
   return url
 
-ef run_agent(leader_agent, query):
+def run_agent(leader_agent, query):
     prompt = f"""Based on Below given Query,
     your task is to call specific tool, first to
     promptify user prompt, than call image tool, or
