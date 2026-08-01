@@ -37,9 +37,9 @@ elif all(ALL_API):
              "gemini-2.5-flash-lite","gemini-2.5-flash"]
   selected_model = st.selectbox("Select-Model",options = options)
 
-model = ChatGoogleGenerativeAI(
-  model = seleced_model,
-  google_api_key = GOOGLE_API_KEY)
+  model = ChatGoogleGenerativeAI(
+    model = seleced_model,
+    google_api_key = GOOGLE_API_KEY)
 
 else:
   st.sidebar.info("Try valid API-Keys")
@@ -112,7 +112,7 @@ if all(ALL_API):
       tools = [search_latest_info,
                #generate_image
                ])
-  leader_agent
+  #leader_agent
 else:
   st.info("Give API-Keys first to load agent")
 
