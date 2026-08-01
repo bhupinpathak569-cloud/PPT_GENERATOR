@@ -38,7 +38,7 @@ elif all(ALL_API):
   selected_model = st.selectbox("Select-Model",options = options)
 
   model = ChatGoogleGenerativeAI(
-    model = seleced_model,
+    model = select_model,
     google_api_key = GOOGLE_API_KEY)
 
 else:
