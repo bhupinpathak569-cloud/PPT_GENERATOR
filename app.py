@@ -152,8 +152,8 @@ if (user_input):
                 code = response["messages"][-1].content[-1]["text"]
                 st.html(code,width="stretch",unsafe_allow_javascript=True)
 
-           except Exception as err:
-                st.error("Error Code:", err)
+            except Exception as err:
+                  st.error("Error Code:", err)
     with tab3:
       if st.button("Click to generate PPT", key = "PPT-Button"):
         with st.spinner("Running Agent"):
